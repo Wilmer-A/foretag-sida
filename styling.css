@@ -1,3 +1,36 @@
+main {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10vh;
+}
+
+.Nvidia {
+  grid-column: 1/1;
+}
+
+.AMD {
+  grid-column: 2/2;
+}
+
+.All {
+  grid-column: 3/3;
+}
+
+header,
+footer {
+  padding: 5vh;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-family: "Krona One", sans-serif;
+}
+
 p {
-  color: aqua;
+  font-family: "Noto Serif", serif;
+  font-size: 1.4vw;
 }
