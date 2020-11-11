@@ -1,4 +1,40 @@
-main {
+:root {
+  --NvidiaGreen: rgb(118, 185, 0);
+  --AmdRed: rgb(237, 28, 36);
+  --AllBlue: rgb(36, 123, 160);
+}
+
+body {
+  margin: 0vw;
+}
+
+header,
+footer {
+  padding: 5vh;
+  background-color: black;
+  color: white;
+}
+
+header h1,
+footer h1 {
+  text-align: center;
+}
+
+footer p {
+  text-align: left;
+}
+
+h1 {
+  font-family: "Krona One", sans-serif;
+}
+
+a,
+p {
+  font-family: "Noto Serif", serif;
+  font-size: 1.4vw;
+}
+
+.IndexMain {
   display: grid;
   justify-items: center;
   text-align: center;
@@ -6,31 +42,102 @@ main {
   margin: 10vh;
 }
 
-.Nvidia {
+.LinkToNvidia {
   grid-column: 1/1;
 }
 
-.AMD {
+.LinkToNvidia a {
+  color: var(--NvidiaGreen);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.LinkToAmd {
   grid-column: 2/2;
 }
 
-.All {
+.LinkToAmd a {
+  color: var(--AmdRed);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.LinkToAll {
   grid-column: 3/3;
 }
 
-header,
-footer {
-  padding: 5vh;
-  background-color: black;
+.LinkToAll a {
+  color: var(--AllBlue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.LinkToNvidia:hover a,
+.LinkToAmd:hover a,
+.LinkToAll:hover a {
+  text-decoration: underline;
+}
+
+.NvidiaMain,
+.AmdMain {
+  display: grid;
+  justify-items: center;
   text-align: center;
-  color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10vh;
 }
 
-h1 {
-  font-family: "Krona One", sans-serif;
+.NvidiaMain a {
+  color: var(--NvidiaGreen);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-p {
-  font-family: "Noto Serif", serif;
-  font-size: 1.4vw;
+.LinkToProduct1:hover a,
+.LinkToProduct2:hover a,
+.LinkToProduct3:hover a {
+  text-decoration: underline;
+}
+
+.LinkToProduct1 {
+  grid-area: 1/1/1/2;
+}
+
+.LinkToProduct2 {
+  grid-area: 2/2/2/3;
+}
+
+.LinkToProduct3 {
+  grid-area: 1/3/1/4;
+}
+
+.AmdMain a {
+  color: var(--AmdRed);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.LinkToProduct1:hover a,
+.LinkToProduct2:hover a,
+.LinkToProduct3:hover a {
+  text-decoration: underline;
+}
+
+.LinkToProduct4 {
+  grid-area: 1/1/1/2;
+}
+
+.LinkToProduct5 {
+  grid-area: 2/2/2/3;
+}
+
+.LinkToProduct6 {
+  grid-area: 1/3/1/4;
+}
+
+.LinkToProduct4:hover a,
+.LinkToProduct5:hover a,
+.LinkToProduct6:hover a {
+  text-decoration: underline;
 }
