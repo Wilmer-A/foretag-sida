@@ -24,6 +24,19 @@ footer p {
   text-align: left;
 }
 
+footer img {
+  width: 20vw;
+}
+
+.Kontaktinfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.Kontaktinfo img {
+  width: 20vw;
+}
+
 h1 {
   font-family: "Krona One", sans-serif;
 }
@@ -31,12 +44,12 @@ h1 {
 a,
 p {
   font-family: "Noto Serif", serif;
-  font-size: 1.4vw;
+  font-size: 1.3vw;
 }
 
 .IndexMain {
   display: grid;
-  justify-items: center;
+  align-items: baseline;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   margin: 10vh;
@@ -78,10 +91,16 @@ p {
   text-decoration: underline;
 }
 
+.LinkToNvidia img,
+.LinkToAmd img,
+.LinkToAll img {
+  width: 23vw;
+}
+
 .NvidiaMain,
 .AmdMain {
   display: grid;
-  justify-items: center;
+  align-items: baseline;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -94,22 +113,28 @@ p {
   font-weight: bold;
 }
 
-.LinkToProduct1:hover a,
-.LinkToProduct2:hover a,
-.LinkToProduct3:hover a {
-  text-decoration: underline;
-}
-
-.LinkToProduct1 {
+.LinkToProduct1650 {
   grid-area: 1/1/1/2;
 }
 
-.LinkToProduct2 {
+.LinkToProduct1660 {
+  grid-area: 1/2/1/3;
+}
+
+.LinkToProduct2060 {
+  grid-area: 1/3/1/4;
+}
+
+.LinkToProduct3070 {
+  grid-area: 2/1/2/2;
+}
+
+.LinkToProduct3080 {
   grid-area: 2/2/2/3;
 }
 
-.LinkToProduct3 {
-  grid-area: 1/3/1/4;
+.LinkToProduct3090 {
+  grid-area: 2/3/2/4;
 }
 
 .AmdMain a {
@@ -118,10 +143,22 @@ p {
   font-weight: bold;
 }
 
-.LinkToProduct1:hover a,
-.LinkToProduct2:hover a,
-.LinkToProduct3:hover a {
+.LinkToProduct1650:hover a,
+.LinkToProduct1660:hover a,
+.LinkToProduct2060:hover a,
+.LinkToProduct3070:hover a,
+.LinkToProduct3080:hover a,
+.LinkToProduct3090:hover a {
   text-decoration: underline;
+}
+
+.LinkToProduct1650 img,
+.LinkToProduct1660 img,
+.LinkToProduct2060 img,
+.LinkToProduct3070 img,
+.LinkToProduct3080 img,
+.LinkToProduct3090 img {
+  width: 15vw;
 }
 
 .LinkToProduct4 {
@@ -129,15 +166,30 @@ p {
 }
 
 .LinkToProduct5 {
-  grid-area: 2/2/2/3;
+  grid-area: 1/2/1/3;
 }
 
 .LinkToProduct6 {
   grid-area: 1/3/1/4;
 }
 
+.LinkToProduct7 {
+  grid-area: 2/1/2/2;
+}
+
+.LinkToProduct8 {
+  grid-area: 2/2/2/3;
+}
+
+.LinkToProduct9 {
+  grid-area: 2/3/2/4;
+}
+
 .LinkToProduct4:hover a,
 .LinkToProduct5:hover a,
-.LinkToProduct6:hover a {
+.LinkToProduct6:hover a,
+.LinkToProduct7:hover a,
+.LinkToProduct8:hover a,
+.LinkToProduct9:hover a {
   text-decoration: underline;
 }
