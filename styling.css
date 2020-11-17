@@ -42,7 +42,8 @@ h1 {
 }
 
 a,
-p {
+p,
+td {
   font-family: "Noto Serif", serif;
   font-size: 1.3vw;
 }
@@ -137,12 +138,6 @@ p {
   grid-area: 2/3/2/4;
 }
 
-.AmdMain a {
-  color: var(--AmdRed);
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .LinkToProduct1650:hover a,
 .LinkToProduct1660:hover a,
 .LinkToProduct2060:hover a,
@@ -159,6 +154,12 @@ p {
 .LinkToProduct3080 img,
 .LinkToProduct3090 img {
   width: 15vw;
+}
+
+.AmdMain a {
+  color: var(--AmdRed);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .LinkToProduct4 {
@@ -192,4 +193,62 @@ p {
 .LinkToProduct8:hover a,
 .LinkToProduct9:hover a {
   text-decoration: underline;
+}
+
+.LinkToProduct4 img,
+.LinkToProduct5 img,
+.LinkToProduct6 img,
+.LinkToProduct7 img,
+.LinkToProduct8 img,
+.LinkToProduct9 img {
+  width: 15vw;
+}
+
+.AllMain {
+  display: grid;
+  align-items: baseline;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 10vh;
+}
+
+.AllMain a {
+  color: var(--AllBlue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Product1650 {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 10vh;
+}
+
+.ProductImage img {
+  width: 35vw;
+}
+
+.ProductInfo {
+  margin-left: 10vw;
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#Pris p {
+  font-size: 1.9vw;
+}
+
+#Lager p {
+  color: green;
+  font-weight: bold;
+}
+
+#EjLager p {
+  color: red;
+  font-weight: bold;
 }
