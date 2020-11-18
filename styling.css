@@ -24,17 +24,14 @@ footer p {
   text-align: left;
 }
 
-footer img {
-  width: 20vw;
-}
-
 .Kontaktinfo {
   display: flex;
   flex-direction: row;
 }
 
 .Kontaktinfo img {
-  width: 20vw;
+  width: 22vw;
+  margin-right: 0.3vw;
 }
 
 h1 {
@@ -43,7 +40,8 @@ h1 {
 
 a,
 p,
-td {
+td,
+th {
   font-family: "Noto Serif", serif;
   font-size: 1.3vw;
 }
@@ -285,7 +283,18 @@ td {
   grid-area: 4/3/4/4;
 }
 
-.Product1650 {
+.Product1650,
+.Product1660,
+.Product2060,
+.Product3070,
+.Product3080,
+.Product3090,
+.Product5500,
+.Product5600,
+.Product5700,
+.Product570,
+.Product580,
+.Product56 {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -300,9 +309,19 @@ td {
   margin-left: 10vw;
 }
 
+.ProductInfo a {
+  color: var(--AllBlue);
+}
+
+td,
+th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
 table {
   border: 1px solid black;
-  text-align: center;
 }
 
 #Pris p {
