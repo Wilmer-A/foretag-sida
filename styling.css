@@ -31,6 +31,7 @@ footer p {
 
 .Kontaktinfo img {
   width: 22vw;
+  height: 17vw;
   margin-right: 0.3vw;
 }
 
@@ -43,7 +44,6 @@ p,
 td,
 th {
   font-family: "Noto Serif", serif;
-  font-size: 1.3vw;
 }
 
 .IndexMain {
@@ -51,6 +51,7 @@ th {
   align-items: baseline;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   margin: 10vh;
 }
 
@@ -217,7 +218,7 @@ th {
 .LinkToProduct570All img,
 .LinkToProduct580All img,
 .LinkToProduct56All img {
-  width: 15vw;
+  width: 17vw;
 }
 
 .AllMain {
@@ -336,4 +337,53 @@ table {
 #EjLager p {
   color: red;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  a,
+  p,
+  td,
+  th,
+  #Pris p {
+    font-size: 1.3vw;
+  }
+
+  h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  a,
+  p,
+  td,
+  th,
+  #Pris p {
+    font-size: 5vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  .IndexMain {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+  }
+
+  .LinkToNvidia {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+
+  .LinkToAmd {
+    grid-row: 2/2;
+    grid-column: 1/1;
+  }
+
+  .LinkToAll {
+    grid-row: 3/3;
+    grid-column: 1/1;
+  }
 }
