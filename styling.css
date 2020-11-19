@@ -24,6 +24,18 @@ footer p {
   text-align: left;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 10vw;
+  height: 20vh;
+}
+
 .Kontaktinfo {
   display: flex;
   flex-direction: row;
@@ -385,5 +397,9 @@ table {
   .LinkToAll {
     grid-row: 3/3;
     grid-column: 1/1;
+  }
+
+  header img {
+    width: 31vw;
   }
 }
