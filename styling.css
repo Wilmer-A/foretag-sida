@@ -58,7 +58,7 @@ th {
   font-family: "Noto Serif", serif;
 }
 
-.IndexMain {
+.BrandLinks {
   display: grid;
   align-items: baseline;
   text-align: center;
@@ -109,10 +109,10 @@ th {
   width: 23vw;
 }
 
-.NvidiaMain,
-.AmdMain {
+.NvidiaProductLinks,
+.AmdProductLinks {
   display: grid;
-  align-items: baseline;
+  align-items: flex-start;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -233,7 +233,7 @@ th {
   width: 17vw;
 }
 
-.AllMain {
+.AllProductLinks {
   display: grid;
   align-items: baseline;
   text-align: center;
@@ -252,47 +252,47 @@ th {
   grid-area: 1/1/1/2;
 }
 
-.LinkToProduct1660All {
+.LinkToProduct570All {
   grid-area: 1/2/1/3;
 }
 
-.LinkToProduct2060All {
+.LinkToProduct580All {
   grid-area: 1/3/1/4;
 }
 
-.LinkToProduct3070All {
+.LinkToProduct5500All {
   grid-area: 2/1/2/2;
 }
 
-.LinkToProduct3080All {
+.LinkToProduct1660All {
   grid-area: 2/2/2/3;
 }
 
-.LinkToProduct3090All {
+.LinkToProduct5600All {
   grid-area: 2/3/2/4;
 }
 
-.LinkToProduct5500All {
+.LinkToProduct2060All {
   grid-area: 3/1/3/2;
 }
 
-.LinkToProduct5600All {
+.LinkToProduct5700All {
   grid-area: 3/2/3/3;
 }
 
-.LinkToProduct5700All {
+.LinkToProduct56All {
   grid-area: 3/3/3/4;
 }
 
-.LinkToProduct570All {
+.LinkToProduct3070All {
   grid-area: 4/1/4/2;
 }
 
-.LinkToProduct580All {
+.LinkToProduct3080All {
   grid-area: 4/2/4/3;
 }
 
-.LinkToProduct56All {
+.LinkToProduct3090All {
   grid-area: 4/3/4/4;
 }
 
@@ -371,14 +371,14 @@ table {
   td,
   th,
   #Pris p {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
-  .IndexMain {
+  .BrandLinks {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     align-items: flex-end;
@@ -400,6 +400,29 @@ table {
   }
 
   header img {
-    width: 31vw;
+    width: 28vw;
+    height: 14vh;
+  }
+
+  .Product1650,
+  .Product1660,
+  .Product2060,
+  .Product3070,
+  .Product3080,
+  .Product3090,
+  .Product5500,
+  .Product5600,
+  .Product5700,
+  .Product570,
+  .Product580,
+  .Product56 {
+    flex-direction: column;
+    margin: 9vw;
+    align-items: center;
+  }
+
+  .NvidiaProductLinks,
+  .AmdProductLinks {
+    justify-content: space-evenly;
   }
 }
