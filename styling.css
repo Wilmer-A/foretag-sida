@@ -112,7 +112,7 @@ th {
 .NvidiaProductLinks,
 .AmdProductLinks {
   display: grid;
-  align-items: flex-start;
+  align-items: baseline;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
